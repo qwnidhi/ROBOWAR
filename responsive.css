@@ -1,0 +1,265 @@
+ 
+  /* Responsive styles */
+  @media only screen and (max-width: 768px) {
+    /* Adjustments for smaller screens */
+    
+    /* Update styles for #nav */
+
+
+    #cursor {
+        height: 20px;
+        width: 20px;
+        background-color: #95c11e;
+        border-radius: 50%;
+        position: fixed;
+        z-index: 99;
+        transition: all linear 0.1s;
+      }
+      #cursor-blur {
+        height: 300px;
+        width: 300px;
+        background-color: rgba(150, 193, 30, 0.3);
+        border-radius: 50%;
+        position: fixed;
+        filter: blur(80px);
+        z-index: 9;
+        transition: all linear 0.4s;
+      }
+    #nav {
+       padding-top: 9vh;
+      height: auto;
+      padding: 0 10px; /* Adjust padding for smaller screens */
+      gap: 20px;
+      padding-right: 20px;
+      justify-content: center;
+      z-index: 1000;
+    }
+    
+    #nav img {
+        padding-top: 2vh;
+      height: auto;
+      width: 10vw; /* Adjust image size for smaller screens */
+    }
+    
+    #nav h4 {
+
+      font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+    
+    /* Update styles for #page1 */
+    #page1 h1 {
+       
+      font-size: 15vw; /* Adjust font size for smaller screens */
+    }
+    
+    #page1 h2 {
+   
+      font-size:6vw; /* Adjust font size for smaller screens */
+    }
+    
+    #page1 p {
+      font-size: 3vw; /* Adjust font size for smaller screens */
+      width: 80%; /* Adjust width for smaller screens */
+    }
+    
+    #page1 #arrow {
+      height: 15vw; /* Adjust arrow size for smaller screens */
+      width: 15vw; /* Adjust arrow size for smaller screens */
+      margin-left: 2%; /* Adjust margin for smaller screens */
+      bottom: 15%; /* Adjust position for smaller screens */
+    }
+    
+    #page1 #arrow i {
+      font-size: 3vw; /* Adjust font size for smaller screens */
+    }
+    
+    /* Update styles for other sections */
+    /* Apply similar adjustments for other sections */
+    
+    #page2 {
+        min-height: 3vh;
+        width: 100%;
+        z-index: 1;
+      }
+    
+    #about-us img {
+        height: 0;
+        width: 0;
+        border-radius: 20px;
+        padding-top: 7vh;
+      }
+    
+    #about-us-in {
+        width: 70%;
+       
+    }
+
+    #page2 h1 {
+      font-size: 7vw;
+    }
+    
+    #page2 h3 {
+      font-size: 4vw;
+    }
+    
+    #page2 p {
+      font-size: 3vw;
+    }
+
+    #cards-container {
+        /* background-color: red; */
+        height: 46vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        position: relative;
+        z-index: 10;
+      }
+    
+    .card {
+        height: 80%;
+        width: 40%;
+        /* background-color: blue; */
+        border-radius: 20px;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+        transition: all ease 0.6s;
+    }
+
+    .overlay {
+        height: auto;
+        background-color: #95c11e;
+        padding: 6px;
+        opacity: 0;
+        transition: all ease 0.6s;
+     }
+
+     .overlay h4 {
+        color: #000;
+        font-size: 2vw;
+        text-transform: uppercase;
+        white-space: nowrap;
+        margin-bottom: 2px;
+        font-weight: 800;
+      }
+
+      .overlay p {
+        color: #000;
+        width: 100%;
+        font-size: 2vw;
+      }
+      .card:hover .overlay {
+        opacity: 1;
+      }
+      .card:hover {
+        transform: rotate3d(-1, 1, 0, 20deg);
+      }
+    #page3 p {
+      font-size: 1vw;
+      width: 80%;
+    }
+    
+    #page3 img {
+      height: 4vh;
+    }
+
+
+    #green-div {
+        height: 30vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* background-color: red; */
+        background: linear-gradient(to left bottom, #119f3a, #ace022);
+      }
+
+      #green-div h4 {
+        width: 70%;
+        line-height: 6vw;
+        color: #000;
+        text-align: center;
+        font-weight: 800;
+        font-size: 20px;
+        text-transform: uppercase;
+      }
+
+      #page3 > p {
+        font-size: 3vw;
+        font-weight: 600;
+        width: 70%;
+        line-height: 43px;
+        text-align: center;
+        margin-bottom: 40vh;
+      }
+      
+      #page3 #colon1 {
+        left: 8%;
+        top: 10%;
+      }
+      #page3 #colon2 {
+        bottom: 52%;
+        right: 19%;
+      }
+    #page4 h1 {
+      font-size: 6vw;
+    }
+
+    .elem {
+        height: 70%;
+        width: 26%;
+        overflow: hidden;
+        border-radius: 20px;
+        position: relative;
+        margin-right: 20px; /* Add margin-right to create space between images */
+      }
+      
+    .elem img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all ease 0.5s;
+        scale: 1;
+      }
+    .elem h2 {
+      font-size: 2vw;
+    }
+
+  #f1 img {
+        height: 10vh;
+        margin-bottom: 10vh;
+      
+      }
+
+      #f1,
+      #f2,
+      #f3,
+      #f4 {
+        width: fit-content;
+        position: relative;
+        z-index: 99;
+      }
+
+     
+      
+      #f3 h3 {
+        font-size: 2vw;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: white;
+        font-weight: 800;
+       
+        margin-bottom: 8px;
+      }
+      #f4 h4 {
+        font-size: 1vw;
+        white-space: nowrap;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        line-height: 20px;
+        margin-bottom: 8px;
+      }
+      
+  }
