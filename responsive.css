@@ -1,5 +1,16 @@
  
   /* Responsive styles */
+  
+  @media only screen and (max-width: 1415px) {
+    #page3 #colon1 {
+      left: 10%;
+      top: 20%;
+    }
+    #page3 #colon2 {
+      bottom: 21%;
+      right: 13%;
+    }
+  }
   @media only screen and (max-width: 768px) {
     /* Adjustments for smaller screens */
     
@@ -29,12 +40,17 @@
        padding-top: 9vh;
       height: auto;
       padding: 0 10px; /* Adjust padding for smaller screens */
-      gap: 20px;
+      gap: 2px;
       padding-right: 20px;
       justify-content: center;
       z-index: 1000;
     }
-    
+    .logo{
+      padding: 1rem 0 0 0.5rem;
+    }
+    .logo img{
+      height: 8.5vw;
+    }
     #nav img {
         padding-top: 2vh;
       height: auto;
@@ -43,22 +59,23 @@
     
     #nav h4 {
 
-      font-size: 3vw; /* Adjust font size for smaller screens */
+      font-size: 2vw; /* Adjust font size for smaller screens */
     }
+
     
     /* Update styles for #page1 */
     #page1 h1 {
        
-      font-size: 15vw; /* Adjust font size for smaller screens */
+      font-size: 12vw; /* Adjust font size for smaller screens */
     }
     
     #page1 h2 {
    
-      font-size:6vw; /* Adjust font size for smaller screens */
+      font-size:5vw; /* Adjust font size for smaller screens */
     }
     
     #page1 p {
-      font-size: 3vw; /* Adjust font size for smaller screens */
+      font-size: 2.5vw; /* Adjust font size for smaller screens */
       width: 80%; /* Adjust width for smaller screens */
     }
     
@@ -107,7 +124,6 @@
     }
 
     #cards-container {
-        /* background-color: red; */
         height: 46vh;
         display: flex;
         align-items: center;
@@ -118,9 +134,8 @@
       }
     
     .card {
-        height: 80%;
-        width: 40%;
-        /* background-color: blue; */
+        height: 60%;
+        width: 30%;
         border-radius: 20px;
         background-size: cover;
         background-position: center;
@@ -184,31 +199,37 @@
         font-size: 20px;
         text-transform: uppercase;
       }
-
+      #page3{
+        height: 75vh;
+      }
       #page3 > p {
         font-size: 3vw;
         font-weight: 600;
         width: 70%;
         line-height: 43px;
         text-align: center;
-        margin-bottom: 40vh;
+        /* margin-bottom: 20vh; */
       }
       
       #page3 #colon1 {
-        left: 8%;
-        top: 10%;
+        left: 9%;
+        top: 20%;
       }
       #page3 #colon2 {
-        bottom: 52%;
-        right: 19%;
+        bottom: 23%;
+        right: 14%;
+      }
+      #page4{
+        padding: 0 1.5rem;
+        gap: 25px;
       }
     #page4 h1 {
       font-size: 6vw;
     }
 
     .elem {
-        height: 70%;
-        width: 26%;
+        height: 46%;
+        width: 24%;
         overflow: hidden;
         border-radius: 20px;
         position: relative;
@@ -262,4 +283,39 @@
         margin-bottom: 8px;
       }
       
+  }
+  @media only screen and (max-width: 580px) {
+    .elem{
+      height: 35%;
+      width: 24%;
+    }
+    .logo img{
+      height: 10.5vw;
+    }
+    #nav{
+      padding: 0px;
+    }
+    #nav h4 a {
+      margin-left: 25px;
+    }
+    .header{
+      padding: 0px;
+    }
+    #page3 > p{
+      line-height: 32px;
+    }
+    #page3 #colon1 {
+      left: 6%;
+      top: 27%;
+    }
+    #page3 #colon2 {
+      bottom: 28%;
+      right: 14%;
+    }
+    #green-div{
+      height: 16vh;
+    }
+    #green-div h4{
+      font-size: 14px;
+    }
   }

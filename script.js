@@ -22,12 +22,12 @@ h4all.forEach(function (elem) {
   });
 });
 
-gsap.to("#nav", {
+gsap.to(".header", {
   backgroundColor: "#000",
   duration: 0.5,
   height: "110px",
   scrollTrigger: {
-    trigger: "#nav",
+    trigger: ".header",
     scroller: "body",
     // markers:true,
     start: "top -10%",
@@ -119,9 +119,9 @@ gsap.from("#page4 h1", {
 document.addEventListener("scroll", function () {
   var scrollPosition = window.scrollY;
   if (scrollPosition > 100) {
-    document.body.style.backgroundImage = "url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\wall2.jpg')";
+    document.body.style.backgroundImage = "url('Assets\\wall2.jpg')";
   } else {
-    document.body.style.backgroundImage = "url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\wall.jpg')";
+    document.body.style.backgroundImage = "url('Assets\\wall.jpg')";
   }
 });
 

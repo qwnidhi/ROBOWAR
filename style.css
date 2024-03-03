@@ -9,7 +9,7 @@
 }
 
 html, body {
-  background-image: url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\walln6.jpg');
+  background-image: url('img/IMG_20240303_181435.png');
   background-size: cover;
   background-position: center;
   margin: 0;
@@ -19,7 +19,10 @@ html, body {
   color: #fff;
   height: 100%;
   width: 100%;
+  scroll-behavior: smooth;
+  
 }
+
 
   
 
@@ -60,20 +63,35 @@ body {
   z-index: 9;
   transition: all linear 0.4s;
 }
-#nav {
-  height: 4.5vw;
-  width: 100%;
-  /* background-color: red; */
+.header{
   display: flex;
   align-items: center;
-  padding: 0 120px;
-  gap: 50px;
+  padding: 0 5px;
+  /* gap: 40px; */
+  z-index: 999;
   position: fixed;
+  width: 100%;
+}
+.logo{
+  height: 9.6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+  padding: 1.5rem 0 0 0.5rem;
+}
+#nav {
+  height: 4.5vw;
+  width: 100%;  
+  display: flex;
+  align-items: center;
+  padding: 0 60px;
+  gap: 40px;
   justify-content: flex-start;
   z-index: 999;
 }
-#nav img {
-  height: 4.5vw;
+.logo img {
+  height: 6.5vw;
 }
 #nav h4 {
   text-transform: uppercase;
@@ -81,6 +99,36 @@ body {
   cursor: pointer;
   font-size: 1.5vw;
 }
+
+#nav h4 a {
+  position: relative;
+  font-size: 1.1em;
+  color: #e8e7e7;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+}
+
+#nav h4 a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  color:#ffffff;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(0);
+  transition: transform .5s;
+
+}
+
+#nav h4 a:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 video {
   height: 100%;
   width: 100%;
@@ -93,6 +141,7 @@ video {
   padding-top: 10%;
   position: relative;
   background-color: rgba(0, 0, 0, 0.39);
+  z-index: -1;
 }
 
 
@@ -265,15 +314,15 @@ body.page2-bg {
   transition: all ease 0.6s;
 }
 #card1 {
-  background-image: url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\walln8.jpg');
+  background-image: url('img/Picsart_24-03-03_17-42-40-158.jpg');
 }
 
 #card2 {
-  background-image: url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\cardN2.jpg');
+  background-image: url('img/IMG-20240301-WA0056.jpg');
 }
 
 #card3 {
-  background-image: url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\walln4.webp');
+  background-image: url('img/Picsart_24-03-02_08-25-35-353.png');
 }
 
 .overlay {
@@ -330,7 +379,7 @@ body.page2-bg {
 #page3 {
   height: 100vh;
   width: 100%;
-  background-image: url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\wall2.jpg');
+  background-image: url('Assets\\wall2.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -353,20 +402,21 @@ body.page2-bg {
 }
 #page3 #colon1 {
   left: 17%;
-  top: 25%;
+  top: 23%;
 }
 #page3 #colon2 {
   bottom: 30%;
   right: 15%;
 }
 #page4 {
-  height: 30vh;
+  height: 40vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 70px;
+  gap: 50px;
   position: relative;
+  border-bottom:2px solid #95c11e;
 }
 .elem {
   height: 70%;
@@ -425,23 +475,34 @@ body.page2-bg {
 #footer {
   height: 40vh;
   width: 100%;
-  background-image: url('C:\\Users\\prabh\\Downloads\\rw\\Assets\\wall2.jpg');
+  background:linear-gradient(rgba(10, 11, 9, 0.8), rgba(5, 7, 3, 0.8)),url('Assets\\wall2.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: flex-start;
   gap: 6.5vw;
-  padding: 0 100px;
+  padding: 4rem 5rem;
+  font-family: "montserrat";
 }
 
+/* #footer .docs::before{
+  content: '';
+    position: absolute;
+    left: 0;
+    bottom: 8.4rem;
+    background-color: #95c11e;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50%;
+} */
 
-#footer > img {
-  position: absolute;
-  left: 0;
-  height: 100%;
-  z-index: 0;
+#footer .docLink{
+  list-style: none;
+}
+.docLink a{
+  text-decoration: none;
 }
 #f1 img {
   height: 200px;
@@ -499,3 +560,178 @@ body.page2-bg {
 .button:hover {
   background-color: green; /* Darker Green */
 }
+
+
+
+
+
+/* navbar css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+
+   #nav1 li{
+    list-style: none;
+
+  }
+  #nav1 a{
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+  }
+
+  /* ------------------ */
+  
+  /* ------------------ */
+#nav1 a:hover{
+  color: #fff;
+}
+
+
+
+/* HEADER */
+header{
+  position: relative;
+  padding: 0 2rem;
+}
+
+.navbar{
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.navbar .logo a{
+  font-size: 1.5rem;
+font-weight: bold;
+}
+
+.navbar .links{
+  display: flex;
+  gap: 2rem;
+}
+.navbar .toggle_btn{
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display:none;
+
+}
+
+.action_btn{
+
+  background-color: orange;
+  color: #fff;
+  padding: .5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: scale 0.2 ease;
+
+}
+.action_btn:hover{
+scale:1.05;
+color: #fff;
+}
+
+.action_btn:active{
+  scale: 0.95;
+ 
+
+}
+/* DROPDOWN DESIGN */
+.dropDown_menu{
+  display: none;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  height: 0;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+#nav2 li{
+  list-style: none;
+
+}
+#nav2 a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;}
+
+  /* on toggle */
+
+
+.open{
+  height: 250px;
+}
+
+.dropDown_menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.dropDown_menu .action_btn{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+}
+
+/* HERO */
+/* section #hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+} */
+/* RESPONSIVE DESIGN */
+@media(max-width:992px){
+  .navbar .links,
+  .navbar .action_btn{
+    display: none;
+  }
+  .navbar .toggle_btn{
+    display: block;
+  }
+  .dropDown_menu{
+    display: block;
+  }
+}
+
+
+@media(max-width:576px){
+
+  .dropDown_menu{
+    left: 2rem;
+    width: unset;
+
+  }
+}
+
