@@ -71,7 +71,7 @@ body {
   /* gap: 40px; */
   z-index: 999;
   position: fixed;
-  width: 100%;
+  width: 93%
 }
 .logo{
   height: 9.6vw;
@@ -720,7 +720,7 @@ color: #fff;
 
   .navbar {
   
-    justify-content:right;
+    justify-content:center;
     
   
   }
@@ -730,7 +730,7 @@ color: #fff;
   }
   .navbar .toggle_btn{
     display: block;
-    margin-right: 20px;
+    /* margin-right: 40px; */
   }
   .dropDown_menu{
     display: block;
