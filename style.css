@@ -9,7 +9,7 @@
 }
 
 html, body {
-  background-image: url('img/IMG_20240303_181435.png');
+  background-image: url('img/IMG_20240303_222617.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -163,7 +163,7 @@ video {
   position: relative;
 }
 #page1 h1::before {
-  content: "ROBO WARS";
+  content: "ROBO FEST";
   position: absolute;
   color: #000;
   top: -5px;
@@ -611,7 +611,8 @@ header{
   margin: 0 auto;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content:center;
+  position: fixed;
 
 }
 
@@ -629,6 +630,7 @@ font-weight: bold;
   font-size: 1.5rem;
   cursor: pointer;
   display:none;
+  position: fixed;
 
 }
 
@@ -714,12 +716,21 @@ color: #fff;
 } */
 /* RESPONSIVE DESIGN */
 @media(max-width:992px){
+
+
+  .navbar {
+  
+    justify-content:right;
+    
+  
+  }
   .navbar .links,
   .navbar .action_btn{
     display: none;
   }
   .navbar .toggle_btn{
     display: block;
+    margin-right: 20px;
   }
   .dropDown_menu{
     display: block;
