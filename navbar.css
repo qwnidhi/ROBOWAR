@@ -106,8 +106,7 @@ transition: scale 0.2 ease;
 
   #register {
     background-color: orange;
-    border-radius: 0px;
-    /* width: 15rem; */
+    width: 10rem;
     height: 10px;
     
     
