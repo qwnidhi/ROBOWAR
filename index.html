@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="card.css">
   <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="navbar.css">
 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
@@ -21,54 +22,31 @@
 
 <body>
 
+<!-- NAVIGATION BAR -->
 
-  <header class="head" style="height: 80px;">
-    <div class="navbar" id="nav1">
-      <!-- <div class="logo"><a href="#">Web Dev Creative</a></div> -->
-      <ul class="links">
-        <li><a href="hero">Home</a></li>
-        <li><a href="about">About</a></li>
-        <li><a href="services">Services</a></li>
-        <li><a href="contact">Contact</a></li>
-      </ul>
+<nav>
+  <input type="checkbox" id="sidebar-active">
+  <label for="sidebar-active" class="open-sidebar-button">
+    <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+  </label>
+  <label id="overlay" for="sidebar-active"></label>
+  <div class="links-container">
+    <label for="sidebar-active" class="close-sidebar-button">
+      <svg xmlns="http://www.w3.org/2000/svg" height="32" viewBox="0 -960 960 960" width="32"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+    </label>
 
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSfn_aNlp9IQd6q6-TIR6edVxnytBvlpL4S6CecnN3ihq-RQ_g/viewform?usp=sf_link"
-        class="action_btn">Register Now</a>
-      <div class="toggle_btn">
-        <i class="fa-solid fa-bars"></i>
-      </div>
-    </div>
-
-    <div class="dropDown_menu " id="nav2">
-      <li><a href="hero">Home</a></li>
-      <li><a href="about">About</a></li>
-      <li><a href="services">Services</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a
-          href="https://docs.google.com/forms/d/e/1FAIpQLSfn_aNlp9IQd6q6-TIR6edVxnytBvlpL4S6CecnN3ihq-RQ_g/viewform?usp=sf_link"
-          class="action_btn">Register Now</a></li>
-    </div>
+    <!-- NOT IN TUTORIAL: The <a> tags are linked to the subpages -->
+    <!-- <a class="home-link" href="index.html">Home</a>  -->
+    <a href="about.html">Home</a> 
+    <a href="products.html">About</a>
+    <a href="#cont">Contact Us</a>
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfn_aNlp9IQd6q6-TIR6edVxnytBvlpL4S6CecnN3ihq-RQ_g/viewform?usp=sf_link" target="_blank" id="register">Register Now</a>
+    
+  </div>
+</nav>
 
 
-  </header>
-
-
-  <!-- <div class="header" style="height: 80px;">
-    <div class="logo">
-      <img src="Assets/Picsart_24-03-02_11-04-19-473.png" alt="" />
-    </div>
-   <div id="nav" style="height: 80px;">
-      <h4><a href="#page1" onclick="scrollToSection('page1')">HOME</a></h4>
-      <h4><a href="#page2" onclick="scrollToSection('page2')">ABOUT</a></h4>
-      <h4><a href="#page3" onclick="scrollToSection('page3')">REGISTRATION</a></h4>
-      <h4><a href="#footer" onclick="scrollToSection('footer')">CONTACT</a></h4>
-    </div
-
-  </div> -->
-  <!-- <div id="cursor"></div>
-  <div id="cursor-blur"></div> -->
-
-  <!-- <video autoplay loop muted src="https://yourwebsite.com/path/to/hero.mp4"></video> -->
+ 
 
   <div id="main">
     <div id="page1">
@@ -80,23 +58,25 @@
         At SSTC, the right atmosphere fosters positive change, shaping engineers of tomorrow2.
       </p>
     </div>
+  
     <div id="page2">
       <div id="scroller">
         <div id="scroller-in">
-          <h4>ROBO WARS</h4>
-          <h4>ROBO WARS</h4>
-          <h4>ROBO WARS</h4>
+          <h4>ROBO FEST</h4>
+          <h4>ROBO FEST</h4>
+          <h4>ROBO FEST</h4>
 
         </div>
         <div id="scroller-in">
-          <h4>ROBO WARS</h4>
-          <h4>ROBO WARS</h4>
-          <h4>ROBO WARS</h4>
+          <h4>ROBO FEST</h4>
+          <h4>ROBO FEST</h4>
+          <h4>ROBO FEST</h4>
 
         </div>
       </div>
+    
       <div id="about-us">
-        <img src="img/Picsart_24-03-03_17-41-07-070.jpg" alt="" />
+        <img src="Assets/walln8.jpg" alt="" />
         <div id="about-us-in">
           <h3>ABOUT US</h3>
           <p>
@@ -144,7 +124,7 @@
         </div>
       </div>
       <div id="green-div">
-        <img src="img/Picsart_24-03-02_08-27-23-524.png" alt="" />
+        <img src="Assets/r5.jpeg" alt="" />
         <h4>
           A True progress lies not in machine strength, but in design wisdom.
         </h4>
@@ -176,7 +156,11 @@
         <img src="Assets\rc.jpg" alt="" />
       </div>
     </div>
-    <div class="contactsec">
+  </div>
+
+    <!-- contact us  -->
+
+    <div class="contactsec" id="cont">
       <h1>contact us</h1>
       <div class="card11">
         <div class="img1">
@@ -192,22 +176,22 @@
       <div class="content2">
         <div class="card11">
           <div class="img2">
-            <img src="img/Adityachodu.jpg" alt="">
+            <img src="img/arin.jpg" alt="">
             <div class="info">
-              <h3>Aditya Verma</h3>
-              <p>Head</p>
-              <li><a href="https://www.instagram.com/_aditya_verma._23?igsh=NGVhN2U2NjQ0Yg==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <h3>Arin RAj</h3>
+              <p>Member</p>
+              <li><a href="https://www.instagram.com/the_arin.singh?igsh=MWVxbTZ0M2kxbmlxOA==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </div>
           </div>
         </div>
 
         <div class="card11">
           <div class="img2">
-            <img src="img/Adityachodu.jpg" alt="">
+            <img src="img/aryan.jpg" alt="">
             <div class="info">
-              <h3>Aditya Verma</h3>
-              <p>Head</p>
-              <li><a href="https://www.instagram.com/_aditya_verma._23?igsh=NGVhN2U2NjQ0Yg==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <h3>Kumar Aryan</h3>
+              <p>Member</p>
+              <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </div>
           </div>
         </div>
@@ -215,9 +199,9 @@
           <div class="img2">
             <img src="img/Adityachodu.jpg" alt="">
             <div class="info">
-              <h3>Aditya Verma</h3>
-              <p>Head</p>
-              <li><a href="https://www.instagram.com/_aditya_verma._23?igsh=NGVhN2U2NjQ0Yg==" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+              <h3>Chitesh Singh</h3>
+              <p>Member</p>
+              <li><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
             </div>
           </div>
         </div>
